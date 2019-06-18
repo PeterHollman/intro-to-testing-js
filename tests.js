@@ -13,6 +13,7 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+//Unit tests for the add function
 describe("add", function() {
     it('should be a defined function', function () {
         expect(typeof add).toBe("function");
@@ -24,7 +25,7 @@ describe("add", function() {
         expect(add("black","bird")).toBe(false);
     });
 });
-
+//Unit tests for the sayHello function
 describe("sayHello", function() {
     it('should be a defined function', function () {
         expect(typeof sayHello).toBe("function");
@@ -48,5 +49,17 @@ describe("sayHello", function() {
         expect(sayHello(true)).toBe("Hello, World!"); });
     it('should return "Hello, World" given the parameter of false ', function () {
         expect(sayHello(false)).toBe("Hello, World!");
+    });
+});
+//Unit tests for the isFive function
+describe("isFive", function(){
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe("function");
+    });
+    it('should return a boolean value', function () {
+        expect(typeof isFive()).toBe("boolean");
+    });
+    it('should return true when passed the 5', function () {
+        expect(isFive("5")).toBe(true);
     });
 });
