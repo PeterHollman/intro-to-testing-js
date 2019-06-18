@@ -9,5 +9,14 @@ function add(num1,num2){
     return num1 + num2;
 }
 function sayHello(input){
+    if(input === undefined){
+        return "Hello, World!";
+    }
+    if(input === Boolean(true)){
+        return "Hello, World!";
+    }
+    if(input === Boolean(false)){
+        return "Hello, World!";
+    }
     return "Hello " + input + "!";
 }
